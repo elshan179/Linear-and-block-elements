@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Блочные и линейные элементы</title>
+  <style>
+    .block-example {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .inline-example img {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .inline-text p {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .container {
+      border: 2px solid #333;
+      padding: 20px;
+      margin-top: 30px;
+      width: 300px;
+    }
+
+    .container p,
+    .container img,
+    .container a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Пример блочных и линейных элементов</h1>
+
+  <div class="block-example">
+    <h2>Блочные элементы</h2>
+    <h3>Это заголовок (h1)</h3>
+    <p>Это абзац (p)</p>
+    <div>Это контейнер (div)</div>
+  </div>
+
+  <div class="inline-example block-example">
+    <h2>Линейный элемент (img) как блочный</h2>
+    <img src="https://via.placeholder.com/150" alt="Пример изображения">
+  </div>
+
+  <div class="inline-text block-example">
+    <h2>Блочные элементы (p) как inline</h2>
+    <p>Абзац 1</p>
+    <p>Абзац 2</p>
+    <p>Абзац 3</p>
+  </div>
+
+  <div class="container">
+    <p>Текст внутри контейнера</p>
+    <img src="https://via.placeholder.com/100" alt="Маленькое изображение">
+    <a href="#">Ссылка внутри контейнера</a>
+  </div>
+
+</body>
+</html>
